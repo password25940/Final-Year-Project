@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block content %}
+<section class="hero p-5 rounded-4 mb-5"><div class="row align-items-center"><div class="col-lg-7">
+<p class="eyebrow">STUDENT VOICE · BETTER TEACHING</p><h1>Turn honest feedback into better learning.</h1>
+<p class="lead">A simple, private way for students to share meaningful feedback and for administrators to discover actionable insights.</p>
+<a class="btn btn-primary btn-lg me-2" href="{{ url_for('login') }}">Student sign in</a><a class="btn btn-outline-dark btn-lg" href="{{ url_for('admin_login') }}">Admin portal</a>
+</div><div class="col-lg-5 text-center"><div class="hero-stat"><strong>1–5</strong><span>clear rating scale</span></div></div></div></section>
+<div class="row g-4"><div class="col-md-4"><div class="feature-card"><h3>Simple submission</h3><p>Submit structured feedback in under two minutes.</p></div></div><div class="col-md-4"><div class="feature-card"><h3>Permanent record</h3><p>Feedback is immutable after submission for trustworthy reporting.</p></div></div><div class="col-md-4"><div class="feature-card"><h3>Useful analytics</h3><p>See teacher, subject, and rating trends at a glance.</p></div></div></div>
+{% endblock %}
